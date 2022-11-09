@@ -1,0 +1,22 @@
+{
+  "name": "seleniumwebdriver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --no-timeouts 'mocha/*.js' --reporter mochawesome --require mochawesome/register",
+    "parallel": "mocha --no-timeouts 'mocha/*.js' --parallel --reporter mochawesome --require mochawesome/register",
+    "report": "open ./mochawesome-report/mochawesome.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.7",
+    "chromedriver": "^107.0.2",
+    "geckodriver": "^3.2.0",
+    "mocha": "^10.1.0",
+    "mochawesome": "^7.1.3",
+    "selenium-webdriver": "^4.5.0"
+  }
+}
